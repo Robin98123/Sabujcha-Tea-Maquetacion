@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Raleway:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 15px;
+}
+
+.ajustar_tamaño{
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+body{
+    background-color: white;
+}
+
+/* Header - barra de navegación*/
+
+.nav{
+    display: flex;
+}
+
+.nav li{
+    color: rgb(64, 64, 64);
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.nav li:hover{
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+        display: none;
+    }
+
+    .carrito_compras{
+        display: none;
+    }
+
+    .menu_desplegable_icono{
+        color: rgb(136, 136, 136);
+    }
+
+    .menu_desplegable_icono:hover{
+        color: rgb(0, 0, 0);
+    }
+    .logo{
+        margin-right: 0px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .menu_desplegable_icono{
+        display: none;
+    }
+    
+}
+
+.logo{
+    margin-right: 120px;
+}
+
+.headder_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.barra_lateral_carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra_lateral_carrito li{
+    list-style: none;
+    margin-right: 5px;
+}
+
+.button_row_down{
+    background: transparent;
+    border: transparent;
+    margin-right: 1rem;
+}
+
+.row_down{
+    color: rgb(124, 124, 124);
+    transform: rotate(270deg);
+    transition: 0.5s;
+}
+
+.row_down:hover{
+    color: rgb(0, 0, 0);
+    transform: rotate(360deg);
+}
+
+.carrito_compras{
+    color: rgb(124, 124, 124);
+}
+
+.carrito_compras:hover{
+    color: rgb(0, 0, 0);
+}
